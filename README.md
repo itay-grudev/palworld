@@ -5,5 +5,5 @@ docker -d \
   --restart unless-stopped \
   -v palworld-data:/home/palworld/Steam/steamapps/common \
   --name palworld \
-  github.io/itay-grudev/palworld:latest
+  ghcr.io/itay-grudev/palworld
 ```
