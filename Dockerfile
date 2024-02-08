@@ -51,7 +51,7 @@ RUN mkdir -p $HOME/.steam && \
 # Install the Palworld server
 RUN steamcmd +login anonymous +app_update 2394010 validate +quit
 
-EXPOSE 8211
+EXPOSE 8211/udp
 
 COPY start.sh /home/palworld/start.sh
 
