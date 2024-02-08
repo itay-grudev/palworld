@@ -56,5 +56,6 @@ EXPOSE 8211
 COPY start.sh /home/palworld/start.sh
 
 WORKDIR /home/palworld
-ENTRYPOINT [ "/home/palworld/start.sh" ]
+ENTRYPOINT [ "/bin/bash" ]
+CMD [ "/home/palworld/start.sh" ]
 
