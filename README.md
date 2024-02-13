@@ -8,7 +8,7 @@ The Docker container includes the PalServer pre-installed, but updates it whenev
 The game requires that you expose UDP port `8211`. Make sure to allow it through your firewall and/or NAT.
 
 ```console
-docker -d \
+docker run -d \
   -p 8211:8211/udp \
   --restart unless-stopped \
   -v palworld-data:/home/palworld/Steam/steamapps/common \
