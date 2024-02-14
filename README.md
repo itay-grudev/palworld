@@ -3,7 +3,7 @@ Palworld Server
 
 PalServer docker container based on a non-root `steamcmd` installation on Ubuntu 22.04.
 
-The Docker container includes the PalServer pre-installed, but updates it whenever it's started. It's highly recommended to mount the whole `steamapps/common` directory, to avoid downloading updates every single time as that may take a while depending on your connection.
+The Docker container includes the PalServer pre-installed, but updates it whenever it's started. It's highly recommended to mount the whole `steamapps/common` directory in a named volume, to avoid downloading updates every single time (as that may take a while depending on your connection) and to ensure the persistence of your world.
 
 The game requires that you expose UDP port `8211`. Make sure to allow it through your firewall and/or NAT.
 
